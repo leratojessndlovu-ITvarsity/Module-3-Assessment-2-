@@ -1,0 +1,279 @@
+html{
+height             : 100%;
+}
+
+h1{
+    color         : rgb(214, 151, 180);
+    width         : auto;
+    display       : block;
+    margin        : 2%;
+    padding       : 10px;
+    padding-bottom: 0%;
+    font-family   : Georgia, 'Times New Roman', Times, serif;
+    font-size     : 80px;
+    text-align    : center;
+}
+
+body{
+    font-family    : sans-serif;
+
+    margin         : 0;
+    padding        : 0;
+
+    height         : 100%;
+}
+
+.body-home{
+    background-image      : url('images/background.jpg');
+    background-position   : center;
+    background-attachment : fixed;
+    background-repeat     : no-repeat;
+    background-size       : cover;
+}
+
+
+/*============HEADER==========*/
+.header{
+    background-color      : rgb(214, 151, 180);
+    width                 : 100%;
+    height                : 50px;
+    top                   : 0;
+    position              : fixed;
+    text-align            : center ;
+}
+
+.header i{
+    float                 : right;
+    padding               : 17px 50px 0px 17px ;
+    color                 : white;
+}
+
+.header img{
+    width                 : 350px;
+    padding-top           : 14px;
+    padding-right         : 25px;
+}
+
+/*============HOME PAGE==========*/
+
+#home-logo-img{
+width     : 500px;
+height    : 150px;
+display   : flex;
+margin    : auto;
+padding   : 30px 20px 30px 20px;
+}
+
+
+
+/*============HOME PAGE MENU==========*/
+.home-menu-item{
+    text-decoration: none;
+    text-transform : uppercase;
+
+    color          : rgb(214, 151, 180);
+    font-size      : 25px;
+    font-weight    : bold;
+    text-align     : center;
+    border         : 3px solid #ffffff;
+
+    display        : block;
+    margin         : auto;
+    margin-bottom  : 8px;
+    width          : 80%;
+}
+
+
+/*============ SEAFOOD ==========*/
+
+#starters{
+    padding-top     :50px;
+}
+
+.starters-list a{
+    text-decoration: none;
+}
+
+.starters-list-item{
+    border         : 6px solid black;
+    margin         : 15px;
+}
+
+.starters-list-item h2{
+    font-weight    : bolder;
+    font-size      : 30px;
+    color          : orangered;
+    padding        : 5px; 
+    }
+
+.starters-list-item i{
+    float          :right;
+    color          : black;
+    padding-right  :100px;
+}    
+
+.starters-list-item p{
+    font-size    : 20px;
+    font-style   : italic;
+    color        : #fff7f7;
+    margin-top   : -7px;
+    padding-left : 10px; 
+}
+
+/*============RECIPE PAGE==========*/
+#recipe{
+    padding-top    :50px;
+    background-image: url('images/background3.jpg');
+}
+
+/*============RECIPE DETAILS==========*/
+.recipe-details img {
+width             :100%;
+}
+
+.recipe-details h1{
+    font-size     : 35px;
+    text-align    : center;
+    border        : 5px solid white;
+    margin        : 10px;
+    padding       : 3px;
+}
+
+.recipe-details h2{
+font-size         : 20px;
+text-align        : left;
+margin            : 0;
+margin-left       : 5px;
+color             :rgb(214, 151, 180);
+}
+
+.recipe-details p{
+    margin       : 10px;
+    color        : #ffffff;
+    font-family  : Georgia, 'Times New Roman', Times, serif;
+}
+
+.recipe-details ol{
+    padding-left    :28px;
+    color           : white;
+}
+
+.recipe-details-info{
+margin-left      : 25px;
+margin-right     : 25px;
+}
+
+.recipe-details-info p{
+     font-size   : 13px;
+     display     : inline-block;
+}
+
+.recipe-details-ingredients label{
+    line-height   : 25px;
+    margin-left   : 10px;
+}
+
+.recipe-details-steps {
+    padding-top    : 20px;
+}
+
+.recipe-details-steps ol{
+    padding-left    :28px;
+    color           : white;
+}
+/************* FORM **********/
+input{
+    width: 90%;
+    height: 25px;
+    margin : 12px 0;
+    border : 1px solid #929292;
+}
+
+textarea{
+    width: 90%;
+    height :25px;
+    margin : 12px 0;
+    border : 1px solid #929292;
+}
+
+.button{
+    display :block;
+    background-color: rgb(214, 151, 180);
+    text-decoration : none;
+    text-align  : center;
+    color       : white;
+    font-size   : 16px;
+    font-weight : 600;
+    margin :  n12px 0;
+    padding : 8px 0;
+}
+
+
+/*============ MAIN ==========*/
+#main{
+    background-color :rgb(225, 225, 225, .8);
+    width   : 50%;
+    display : block;
+    margin  : auto;
+    margin-top : 12px;
+    padding    : 10px;
+ }
+
+ #main h1{
+     color   : black;
+ }
+  
+
+
+.main1{
+    background: url('images/thanks.png');
+    background-repeat :repeat;
+    width   :100%;
+}
+
+/*============RESPONSIVE LAYOUT==========*/
+@media only screen and (min-width: 600px) {
+#starters{
+width               : 80%;
+margin              : auto ;
+}
+
+#recipe {
+    width           : 80%;
+    margin          : auto;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+    #starters{
+        width               : 60%;
+        margin              : auto ;
+        }
+        
+        #recipe {
+            width           : 60%;
+            margin          : auto;
+        }
+        }
+
+        @media only screen and (min-width: 1500px) {
+            #starters{
+                width               : 40%;
+                margin              : auto ;
+                }
+                
+                #recipe {
+                    width           : 40%;
+                    margin          : auto;
+                }
+                }
+
+                @media only screen and (min-width: 720px) {
+                .body-home{
+                    background-image : url('images/background.jpg') ;
+                }
+                .body-meals{
+                    background-image  : url('images/background2.jpg');
+                }
+
+                }
